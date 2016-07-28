@@ -1,0 +1,13 @@
+.transparent {
+  background: #fff;
+  opacity: 0.0;
+  filter: alpha(opacity=0);
+}
+
+.left-icon {
+  min-height: 48px;
+}
+
+.modal {
+  width: 200px;
+}

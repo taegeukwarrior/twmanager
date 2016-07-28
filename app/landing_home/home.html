@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id" ng-app="twpati">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" ng-href="css/styles.css" />
+    <title>TAEGEUK WARRIOR - Home</title>
+  </head>
+  <body ng-controller="homeCtrl" ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings" ng-click="sideClick()">
+          <i class="material-icons">menu</i>
+        </md-button>
+        <h2>TAEGEUK WARRIOR</h2>
+        <span flex></span>
+        <md-button ng-click="loginDialog($event)">LOGIN</md-button>
+      </div>
+    </md-toolbar>
+    <md-sidenav
+      class="md-sidenav-left"
+      md-component-id="left"
+      md-is-looked-open="$mdMedia('gt-md')"
+      md-disable-backdrop="true"
+      md-whiteframe="4"
+      layour="row">
+      <md-toolbar class="md-toolbar-tools">
+        <h2>Main Menus</h2>
+      </md-toolbar>
+      <md-content>
+        <div layout="row">
+          <span flex></span>
+          <md-button class="md-icon-button" ng-click="closeSide()"><i class="material-icons">close</i></md-button>
+        </div>
+      </md-content>
+    </md-sidenav>
+  </body>
+</html>

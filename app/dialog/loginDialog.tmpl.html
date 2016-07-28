@@ -1,0 +1,27 @@
+<md-dialog aria-label="login" flex="33">
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h3>Login</h3>
+    </div>
+  </md-toolbar>
+  <md-dialog-content>
+    <div layout="column" layout-padding>
+      <md-content class="md-no-momentum">
+        <md-input-container class="md-block">
+          <label>Email</label>
+          <md-icon md-svg-src="images/icon/ic_email_24px.svg"></md-icon>
+          <input type="email" ng-model="users.email" placeholder="Email Anda"/>
+        </md-input-container>
+        <md-input-container class="md-icon-float md-block">
+          <label>Password</label>
+          <md-icon md-svg-src="images/icon/ic_vpn_key_24px.svg"></md-icon>
+          <input type="password" ng-model="users.pwd" placeholder="Password Anda"/>
+        </md-input-container>
+      </md-content>
+    </div>
+  </md-dialog-content>
+  <md-divider></md-divider>
+  <md-dialog-actions layout="row">
+    <md-button class="md-accent md-raised" ng-click="signIn()">Masuk</md-button>
+  </md-dialog-actions>
+</md-dialog>
